@@ -1,0 +1,35 @@
+{
+  "name": "hospital_api",
+  "version": "1.0.0",
+  "description": "Design the server side for a hospital",
+  "main": "index.js",
+  "scripts": {
+    "start": "set NODE_ENV=dev && nodemon index.js",
+    "test": "mocha --timeout 10000"
+  },
+  "author": "Ashish Satpute",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "config": "^3.3.8",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.6.5",
+    "morgan": "^1.10.0",
+    "node_env": "^0.0.3",
+    "nodemon": "^2.0.20",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "mocha": "^10.0.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [
+    "hospitalUse"
+  ]
+}
