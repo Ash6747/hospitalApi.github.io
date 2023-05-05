@@ -27,16 +27,11 @@ URL: ` http://localhost:8000/api/v1`
 1. Testing for `/patients/register`
 2. Testing for `/patients/:id/create_report`
 3. Testing for `/patients/:id/all_reports`
-![](/Images/1.JPG)
-![](/Images/2.JPG)
-![](/Images/3.JPG)
-![](/Images/4.JPG)
-![](/Images/5.JPG)
-![](/Images/6.JPG)
-![](/Images/7.JPG)
-![](/Images/8.JPG)
-![](/Images/9.JPG)
-![](/Images/10.JPG)
-![](/Images/11.JPG)
-![](/Images/12.JPG)
-![](/Images/13.JPG)
+![](/images/doctors_register.jpg)
+![](/images/doctors_login.jpg)
+![](/images/patients_register.jpg)
+![](/images/patients_authorization.jpg)
+![](/images/patients_create_report.jpg)
+![](/images/patients_all_report.jpg)
+![](/images/reports.jpg)
+
