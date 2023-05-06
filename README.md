@@ -1,4 +1,6 @@
 # hospitalApi.github.io
+## New Hosted Url:
+https://hospital-api-25pg.onrender.com
 ## How to INSTALL and RUN?
 
 1. Clone the project.
