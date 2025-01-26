@@ -1,39 +1,121 @@
-# hospitalApi.github.io
-## New Hosted Url:
-https://hospital-api-25pg.onrender.com
-## How to INSTALL and RUN?
+# 🌟 Hospital API
 
-1. Clone the project.
-2. Navigate to the folder `cd Hospital-API ` where the project has been Stored.
-3. Open Terminal and type `npm install` to install required files.
-4. Run following command: `Nodemon .\index.js `
+**A RESTful API for managing doctors, patients, and medical reports efficiently.**
 
-## How to USE?
+🚀 **[Hosted API](https://hospital-api-25pg.onrender.com)** | 💻 **Local Setup Guide Below**
 
-URL: ` http://localhost:8000/api/v1`
+---
 
-#### End Points:
-1. `/doctor/register`(POST): Register the new doctor using name,email and password(all requireds).
-2. `/doctor/login`(POST): Doctor can Login using email and password.
-3. `/patients/register`(POST): Doctor can Register the patient using name and Phone Number.
-4. `/patients/:id/create_report`(POST): Doctor can create report of the Patients.
-5. `/patients/:id/all_reports`(GET):Retrive all reports of a patient by ID.
-6. `/reports/:status`(GET):Retrieve all reports from DB filter on the basis of Status sent in params.
+## 🛠️ Installation and Setup
 
-## Unit Tesing 
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/Ash6747/hospitalApi.github.io.git
+   cd hospitalApi.github.io
+   ```
 
-1. Run following command: `npm test` for unit-tesing.
- 
-- Used `mocha` as a server and `chai` for assertion library.
+2. **Install Dependencies:**
+   ```bash
+   npm install
+   ```
 
-1. Testing for `/patients/register`
-2. Testing for `/patients/:id/create_report`
-3. Testing for `/patients/:id/all_reports`
-![](/images/doctors_register.jpg)
-![](/images/doctors_login.jpg)
-![](/images/patients_register.jpg)
-![](/images/patients_authorization.jpg)
-![](/images/patients_create_report.jpg)
-![](/images/patients_all_report.jpg)
-![](/images/reports.jpg)
+3. **Start the Server:**
+   ```bash
+   nodemon index.js
+   ```
+
+   ⚠️ *Ensure `nodemon` is installed globally or use `npx nodemon index.js`.*
+
+---
+
+## 📖 API Endpoints
+
+### Base URL: `http://localhost:8000/api/v1`
+
+#### 🩺 Doctor Management
+- **Doctor Registration**
+  - **Endpoint:** `/doctor/register`
+  - **Method:** `POST`
+  - **Payload:** `{ "name": "string", "email": "string", "password": "string" }`
+  - **Description:** Register a new doctor.
+
+- **Doctor Login**
+  - **Endpoint:** `/doctor/login`
+  - **Method:** `POST`
+  - **Payload:** `{ "email": "string", "password": "string" }`
+  - **Description:** Authenticate a doctor and receive a token.
+
+#### 👥 Patient Management
+- **Patient Registration**
+  - **Endpoint:** `/patients/register`
+  - **Method:** `POST`
+  - **Payload:** `{ "name": "string", "phoneNumber": "string" }`
+  - **Description:** Register a new patient.
+
+- **Create Patient Report**
+  - **Endpoint:** `/patients/:id/create_report`
+  - **Method:** `POST`
+  - **Payload:** `{ "status": "string", "details": "string" }`
+  - **Description:** Create a medical report for a patient identified by `id`.
+
+- **Get All Patient Reports**
+  - **Endpoint:** `/patients/:id/all_reports`
+  - **Method:** `GET`
+  - **Description:** Retrieve all medical reports for a specific patient.
+
+#### 📋 Report Management
+- **Fetch Reports by Status**
+  - **Endpoint:** `/reports/:status`
+  - **Method:** `GET`
+  - **Description:** Retrieve all reports filtered by their status.
+
+---
+
+## ⚙️ Technologies Used
+
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB (Mongoose ODM)
+- **Authentication:** JSON Web Tokens (JWT)
+
+---
+
+## 🎯 Features
+
+- 🔒 Secure authentication for doctors.
+- 📁 Manage patient registrations and medical reports.
+- 📊 Filter reports based on their status.
+- ⚡ High performance and scalability.
+
+---
+
+## ✅ Testing
+
+Run unit and integration tests:
+```bash
+npm test
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -m "Add new feature"`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Create a pull request.
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+
+---
+
+👤 **Author:** [Ash6747](https://github.com/Ash6747)
+
+Have questions? Feel free to open an issue or contact me!
 
